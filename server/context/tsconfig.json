@@ -1,0 +1,24 @@
+{
+  "extends": "tsconfig/server.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": "src",
+    "paths": {
+      "@middleware/*": [
+          "middleware/*"
+      ],
+      "@db/*": [
+          "db/*"
+      ],
+      "@appolo/*": [
+          "appolo/*"
+      ],
+      "@migration/*": [
+        "migration/*"
+      ],
+    }
+  },
+  "include": [
+    "src"
+  ]
+}

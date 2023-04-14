@@ -1,0 +1,28 @@
+image: node:latest
+
+stages:
+  - build
+  - publish
+
+build:
+  stage: build
+  script:
+    - yarn install
+    - yarn run build
+  only:
+    - master
+    - release
+    - stable
+  retry: 2
+
+publish:
+  stage: publish
+  only:
+    - /^[0-9.]+/
+  script:
+    - yarn install
+    - yarn run build
+    - echo "@mzara:registry=https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/npm/">.npmrc
+    - echo "//gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}">>.npmrc
+    - npm publish --verbose
+  retry: 2

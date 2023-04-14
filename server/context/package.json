@@ -1,0 +1,42 @@
+{
+  "name": "@mzara/context",
+  "version": "1.0.0",
+  "description": "Mzara backend context",
+  "author": "rocknatt",
+  "license": "MIT",
+  "repository": "rocknatt/mz-lib",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.tsx",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ttsc",
+    "watch": "ttsc -w",
+    "w": "yarn run watch",
+    "start": "yarn run watch",
+    "migration:create": "typeorm migration:create ",
+    "migration:start": "typeorm migration:run"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "graphql": "^15.3.0",
+    "graphql-fields": "^2.0.3",
+    "graphql-type-json": "^0.3.2",
+    "type-graphql": "^1.1.1",
+    "typeorm": "^0.3.10",
+    "@mzara/graphql": "^1.0.0",
+    "apollo-server-express": "^2.24.0",
+    "express-useragent": "^1.0.15",
+    "mysql2": "^2.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.0",
+    "typescript": "^4.1.2"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "extends": "tsconfig/server.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": "src",
+    "paths": {
+      "@models/*": [
+          "models/*"
+      ],
+      "@_types/*": [
+        "types/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
+      "graphql": [
+        "../node_modules/graphql"
+      ],
+      "@graphql/*": [
+        "graphql/*"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ]
+}

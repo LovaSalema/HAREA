@@ -1,0 +1,3 @@
+$ yarn run generate-resolver
+$ node ./src/bin/generate-resolver.js
+$ ttsc

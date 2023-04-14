@@ -1,0 +1,40 @@
+{
+  "name": "@mzara/api-file",
+  "version": "1.0.0",
+  "description": "Mzara backend context",
+  "author": "rocknatt",
+  "license": "MIT",
+  "repository": "rocknatt/mz-lib",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.tsx",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc -w",
+    "build": "tsc",
+    "w": "yarn run watch",
+    "start": "yarn run watch"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "express": "^4.16.3",
+    "@mzara/graphql": "^1.0.0",
+    "@mzara/context": "^1.0.0",
+    "pizzip": "^3.1.1",
+    "docxtemplater": "^3.29.0",
+    "google-auth-library": "^7.9.2",
+    "googleapis": "^96.0.0"
+  },
+  "devDependencies": {
+    "@types/pizzip": "^3.0.2",
+    "@types/node": "^12.0.0",
+    "typescript": "^4.1.2",
+    "@types/multer": "^1.4.5"
+  }
+}
