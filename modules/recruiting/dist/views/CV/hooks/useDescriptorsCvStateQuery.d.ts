@@ -1,0 +1,2 @@
+export declare const useDescriptorsCvStateQuery: (tp?: string, suspense?: boolean) => import("@mzara/component").UseMzQuery<Record<string, any>, any>;
+//# sourceMappingURL=useDescriptorsCvStateQuery.d.ts.map

@@ -1,0 +1,3 @@
+export declare const useLoginMutation: () => import("react-query").UseMutationResult<any, any, unknown, unknown>;
+export declare const LOGIN = "\nmutation login($userName: String!, $password: String!, $remember: Boolean!) {\n    login(\n        data: {\n            userName: $userName, \n            password: $password, \n            remember: $remember\n        }\n    )\n}\n";
+//# sourceMappingURL=useLoginMutation.d.ts.map

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["temp_stylePlugin:ni:sha-256;WsPRvmHqawf8HdVAEDpMJGBkNx6UKVF57MdaIJoFO6A"],
+  "sourcesContent": ["\r\n    .box-mb-0 h3 {\r\n\r\n    margin-bottom: 0px\n}\r\n\r\n    .box-body-background.box {\r\n\r\n    --tw-bg-opacity: 1;\r\n\r\n    background-color: rgb(243 243 243 / var(--tw-bg-opacity))\n}\r\n\r\n    .button-rounded-full.btn {\r\n\r\n    border-radius: 9999px\n}"],
+  "mappings": ";AACI;AAEA;AAAA;AAGA;AAEA;AAEA;AAAA;AAGA;AAEA;AAAA;",
+  "names": []
+}

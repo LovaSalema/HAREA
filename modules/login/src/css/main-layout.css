@@ -1,0 +1,18 @@
+
+body {
+    background-color: var(--default);
+}
+
+.login-layout {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.login-layout .login-container{
+    max-width: 380px;
+    background-color: var(--white);
+    padding: 30px 30px;
+    box-shadow: var(--box-shadow);
+}

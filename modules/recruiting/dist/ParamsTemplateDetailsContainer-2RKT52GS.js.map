@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/views/template-details/views/params/containers/ParamsTemplateDetailsContainer.tsx"],
+  "sourcesContent": ["const ParamsTemplateDetailsContainer = () => {\r\n    return <div>Params</div>\r\n}\r\n\r\nexport default ParamsTemplateDetailsContainer"],
+  "mappings": ";;;;AAAA;AAAA,IAAM,iCAAiC,MAAM;AACzC,SAAO,oBAAC;AAAA,IAAI;AAAA,GAAM;AACtB;AAEA,IAAO,yCAAQ;",
+  "names": []
+}

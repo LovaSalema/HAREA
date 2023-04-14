@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/views/user-details/views/vacation/containers/VacationUserDetailsContainer.tsx"],
+  "sourcesContent": ["const VacationUserDetailsContainer = () => {\r\n    return <div>Cong\u00E9s</div>\r\n}\r\n\r\nexport default VacationUserDetailsContainer"],
+  "mappings": ";;;;AAAA;AAAA,IAAM,+BAA+B,MAAM;AACvC,SAAO,oBAAC;AAAA,IAAI;AAAA,GAAM;AACtB;AAEA,IAAO,uCAAQ;",
+  "names": []
+}

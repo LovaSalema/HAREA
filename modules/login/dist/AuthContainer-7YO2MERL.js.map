@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/containers/AuthContainer.tsx"],
+  "sourcesContent": ["\r\nimport { GenericSuspense, useRuntimeEnv } from \"@mzara/component\";\r\n\r\nimport { useRedirectToApp } from \"hooks/useRedirectApp\";\r\nimport { useEffect } from \"react\";\r\nimport { Outlet } from \"react-router-dom\";\r\nimport '../css/main-layout.css'\r\n\r\nconst AuthContainer = () => {\r\n\r\n    const redirectToApp = useRedirectToApp()\r\n    const { runtimeEnv } = useRuntimeEnv()\r\n    useEffect(() => {\r\n        if (runtimeEnv?.authenticated) {\r\n            redirectToApp()\r\n        }\r\n    }, [runtimeEnv])\r\n\r\n    return (\r\n        <>\r\n            <div> \r\n                <GenericSuspense>\r\n                    <Outlet />\r\n                </GenericSuspense>\r\n                \r\n            </div>\r\n        </>\r\n    );\r\n};\r\n\r\nexport default AuthContainer;\r\n"],
+  "mappings": ";;;;;;;AACA,SAAS,iBAAiB,qBAAqB;AAG/C,SAAS,iBAAiB;AAC1B,SAAS,cAAc;AALvB;AAQA,IAAM,gBAAgB,MAAM;AAExB,QAAM,gBAAgB,iBAAiB;AACvC,QAAM,EAAE,WAAW,IAAI,cAAc;AACrC,YAAU,MAAM;AACZ,QAAI,yCAAY,eAAe;AAC3B,oBAAc;AAAA,IAClB;AAAA,EACJ,GAAG,CAAC,UAAU,CAAC;AAEf,SACI;AAAA,IACI,8BAAC;AAAA,MACG,8BAAC;AAAA,QACG,8BAAC,UAAO;AAAA,OACZ;AAAA,KAEJ;AAAA,GACJ;AAER;AAEA,IAAO,wBAAQ;",
+  "names": []
+}

@@ -1,0 +1,6 @@
+warning package.json: No license field
+$ yarn run build:esbuild && yarn run ts-types
+warning package.json: No license field
+$ node --experimental-json-modules ./build.js
+warning package.json: No license field
+$ ttsc --emitDeclarationOnly --outDir dist

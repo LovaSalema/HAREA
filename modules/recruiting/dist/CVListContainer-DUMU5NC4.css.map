@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["temp_stylePlugin:ni:sha-256;EgQaneT8rVzap8L5022UgR8OFVSxqB8vENa89VZJcP4"],
+  "sourcesContent": ["\r\n    .scroll-selected .control-selected {\n    overflow-x: auto\n}"],
+  "mappings": ";AACI;AACA;AAAA;",
+  "names": []
+}

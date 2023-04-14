@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/hooks/useRedirectApp.ts"],
+  "sourcesContent": ["import { useAjax, useUrlParamsDecode, useUrlParamsEncode, useUrlParamsValue } from \"@mzara/component\"\r\nimport { useCallback } from \"react\"\r\n\r\nexport const useRedirectToApp = () => {\r\n    const ajax = useAjax()\r\n\r\n    const { r } = useUrlParamsValue<RedirectionParams>()\r\n    const urlDecode = useUrlParamsDecode()\r\n    const urlEncode = useUrlParamsEncode()\r\n    \r\n    return useCallback(() => {\r\n\r\n        if (r) {\r\n            const [url] = r.split('?')\r\n            const returnUrlParams = urlDecode(r)\r\n            const params = { ...returnUrlParams, _t: ajax?.get_token() }\r\n            window.location.href = `${url}?${urlEncode(params)}`\r\n        } else {\r\n            window.location.href = `${process.env.REACT_APP_DEFAULT_APP}?_t=${ajax?.get_token()}`\r\n        }\r\n    }, [r])\r\n}\r\n\r\ntype RedirectionParams = {\r\n    r?: string\r\n}\r\n"],
+  "mappings": ";;;;;;;AAAA,SAAS,SAAS,oBAAoB,oBAAoB,yBAAyB;AACnF,SAAS,mBAAmB;AAErB,IAAM,mBAAmB,MAAM;AAClC,QAAM,OAAO,QAAQ;AAErB,QAAM,EAAE,EAAE,IAAI,kBAAqC;AACnD,QAAM,YAAY,mBAAmB;AACrC,QAAM,YAAY,mBAAmB;AAErC,SAAO,YAAY,MAAM;AAErB,QAAI,GAAG;AACH,YAAM,CAAC,GAAG,IAAI,EAAE,MAAM,GAAG;AACzB,YAAM,kBAAkB,UAAU,CAAC;AACnC,YAAM,SAAS,iCAAK,kBAAL,EAAsB,IAAI,6BAAM,YAAY;AAC3D,aAAO,SAAS,OAAO,GAAG,OAAO,UAAU,MAAM;AAAA,IACrD,OAAO;AACH,aAAO,SAAS,OAAO,GAAG,QAAQ,IAAI,4BAA4B,6BAAM;AAAA,IAC5E;AAAA,EACJ,GAAG,CAAC,CAAC,CAAC;AACV;",
+  "names": []
+}

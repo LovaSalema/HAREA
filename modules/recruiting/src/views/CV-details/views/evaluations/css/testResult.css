@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components{
+    button.button-bg-primary{
+        @apply bg-primary
+    }
+
+    button.button-bg-grey{
+        @apply bg-[#ECECEC]
+    }
+}

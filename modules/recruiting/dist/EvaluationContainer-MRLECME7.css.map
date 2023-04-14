@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["temp_stylePlugin:ni:sha-256;z5bm-Fj4bofc5XBzzuaabrT-Z_mdCqCOPjF5xqPAfy8"],
+  "sourcesContent": ["\r\n    button.button-bg-primary {\r\n\r\n    --tw-bg-opacity: 1;\r\n\r\n    background-color: rgb(72 73 108 / var(--tw-bg-opacity))\n}\r\n\r\n    button.button-bg-grey {\r\n\r\n    --tw-bg-opacity: 1;\r\n\r\n    background-color: rgb(236 236 236 / var(--tw-bg-opacity))\n}"],
+  "mappings": ";AACI;AAEA;AAEA;AAAA;AAGA;AAEA;AAEA;AAAA;",
+  "names": []
+}

@@ -1,0 +1,3 @@
+export declare const useLoginOAuthMutation: () => import("react-query").UseMutationResult<any, any, unknown, unknown>;
+export declare const OAUTH = "\nmutation oauth(\n    $auth_type: String!, \n    $id: String,\n    $id_token: String!\n) {\n    oauth(\n        data: {\n            auth_type: $auth_type, \n            id: $id,\n            id_token: $id_token\n        }\n    )\n}\n";
+//# sourceMappingURL=useLoginOAuthMutation.d.ts.map

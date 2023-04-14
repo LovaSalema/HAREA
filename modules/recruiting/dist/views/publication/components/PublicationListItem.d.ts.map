@@ -1,0 +1,1 @@
+{"version":3,"file":"PublicationListItem.d.ts","sourceRoot":"","sources":["../../../../src/views/publication/components/PublicationListItem.tsx"],"names":[],"mappings":"AACA,OAAO,EAAE,iBAAiB,EAAE,MAAM,gBAAgB,CAAC;AAOnD,eAAO,MAAM,mBAAmB,eAAa,wBAAwB,gBA0DpE,CAAA;AAED,oBAAY,wBAAwB,GAAG;IACnC,MAAM,CAAC,EAAE,iBAAiB,CAAA;CAC7B,CAAA"}

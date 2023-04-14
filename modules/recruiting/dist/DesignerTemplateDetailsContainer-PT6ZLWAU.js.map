@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/views/template-details/views/designer/containers/DesignerTemplateDetailsContainer.tsx"],
+  "sourcesContent": ["const DesignerTemplateDetailsContainer = () => {\r\n    return <div>Designer</div>\r\n}\r\n\r\nexport default DesignerTemplateDetailsContainer"],
+  "mappings": ";;;;AAAA;AAAA,IAAM,mCAAmC,MAAM;AAC3C,SAAO,oBAAC;AAAA,IAAI;AAAA,GAAQ;AACxB;AAEA,IAAO,2CAAQ;",
+  "names": []
+}

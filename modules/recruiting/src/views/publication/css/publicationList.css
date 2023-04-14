@@ -1,0 +1,15 @@
+@tailwind components;
+
+@layer components {
+    .box-mb-0 h3{
+        @apply mb-0
+    }
+
+    .box-body-background.box{
+        @apply bg-body-background
+    }
+
+    .button-rounded-full.btn{
+        @apply rounded-full
+    }
+}

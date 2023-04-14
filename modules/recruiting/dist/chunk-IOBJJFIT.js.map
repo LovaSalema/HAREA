@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/views/publication/hooks/useBreadCrumb.ts"],
+  "sourcesContent": ["import { BreadCrumbItemProps } from \"@mzara/component\";\r\n\r\nexport const useBreadCrumb = (): Array<BreadCrumbItemProps> => {\r\n    return [\r\n        {\r\n            label: \"Home\",\r\n        },\r\n        {\r\n            label: \"Annonce\",\r\n        },\r\n        {\r\n            label: \"CV\",\r\n        },\r\n    ];\r\n};\r\n"],
+  "mappings": ";;AAEO,IAAM,gBAAgB,MAAkC;AAC3D,SAAO;AAAA,IACH;AAAA,MACI,OAAO;AAAA,IACX;AAAA,IACA;AAAA,MACI,OAAO;AAAA,IACX;AAAA,IACA;AAAA,MACI,OAAO;AAAA,IACX;AAAA,EACJ;AACJ;",
+  "names": []
+}

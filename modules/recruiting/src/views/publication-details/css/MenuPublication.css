@@ -1,0 +1,36 @@
+@tailwind components;
+
+@layer components {
+    .menuPublication{
+        @apply relative text-[#B392F9] p-0;
+    }
+    .menuPublication::after{
+        @apply w-full bg-[#E9E5E5] rounded-full absolute bottom-0 left-0;
+        content: '';
+        height: 3px;
+    }
+    .menuPublication .menu-item{
+        @apply border-b-[3px] z-[1] border-[#E9E5E5] 
+        
+    }
+
+   
+    .menuPublication .menu-item.active {
+        @apply border-[#B392F9]
+    }
+
+    .menuPublication .menu-item a:hover,
+    .menuPublication .menu-item a:active,
+    .menuPublication .menu-item.active a {
+        @apply bg-transparent text-black 
+    }
+
+    .menuPublication .menu-item .item-badge{
+        @apply bg-[#120EE41F]/[.12] text-black
+    }
+
+    .menuPublication .menu-item a{
+        @apply gap-2
+    }
+}
+

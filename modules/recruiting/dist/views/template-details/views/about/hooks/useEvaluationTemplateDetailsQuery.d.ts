@@ -1,0 +1,2 @@
+export declare const useEvaluationTemplateDetailsQuery: (id: number, suspense: boolean) => import("@mzara/component").UseMzQuery<Record<string, any>, any>;
+//# sourceMappingURL=useEvaluationTemplateDetailsQuery.d.ts.map

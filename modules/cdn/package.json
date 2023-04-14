@@ -1,0 +1,17 @@
+{
+  "name": "@mzara/cdn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec yarn run serve",
+    "serve": "npx serve -s . -l 5000 --cors=Authorization",
+    "cdn": "yarn run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^13.0.2"
+  }
+}

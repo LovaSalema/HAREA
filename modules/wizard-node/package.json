@@ -1,0 +1,35 @@
+{
+  "name": "@mzara/wizard-node",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "dist"
+  },
+  "dependencies": {
+    "@mzara/component": "*",
+    "@mzara/config": "*",
+    "@mzara/graphql": "*",
+    "@mzara/control-list-designer": "*",
+    "@mzara/lib": "*",
+    "@mzara/wizard": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon --exec yarn run build",
+    "build": "yarn run build:esbuild && yarn run ts-types",
+    "build:esbuild": "node --experimental-json-modules ./build.js",
+    "ts-types": "ttsc --emitDeclarationOnly --outDir dist"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

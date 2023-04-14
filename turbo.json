@@ -1,0 +1,54 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "build:lib": {
+      "dependsOn": ["^build"]
+    },
+    "start:bo": {
+      "dependsOn": ["^build"]
+    },
+    "start:bo-local": {
+      "dependsOn": ["^build", "cdn", "server:gut"]
+    },
+    "start:bo-harea": {
+      "dependsOn": ["^build"]
+    },
+    "start:harea": {
+      "dependsOn": ["^build"]
+    },
+    "start:bo-harea-local": {
+      "dependsOn": ["^build", "cdn", "server:harea"]
+    },
+    "build:bo-harea": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", "build/**"]
+    },
+    "build:harea": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", "build/**"]
+    },
+    "build:server": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "server:gut": {
+      "dependsOn": ["^build"]
+    },
+    "cdn": {
+      "cache": false
+    },
+    "lint": {
+      "outputs": []
+    },
+    "dev": {
+      "cache": false
+    },
+    "test": {
+      "cache": false
+    }
+  }
+}

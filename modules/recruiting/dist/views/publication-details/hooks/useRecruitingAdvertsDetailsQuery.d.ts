@@ -1,0 +1,2 @@
+export declare const useRecruitingAdvertsDetailsQuery: (id?: number, suspense?: boolean) => import("@mzara/component").UseMzQuery<Record<string, any>, any>;
+//# sourceMappingURL=useRecruitingAdvertsDetailsQuery.d.ts.map

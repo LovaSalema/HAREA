@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/containers/components/Badge.tsx"],
+  "sourcesContent": ["export const Badge = ({label, color, className,...props}:BadgeProps) => {\r\n    return (\r\n        <span className={className +\" text-white text-[9px] px-2 py-[2px] w-fit rounded-full\"} {...props} style={{backgroundColor: color}}>{label}</span>\r\n    )\r\n}\r\n\r\nexport type BadgeProps = {\r\n    label?: string,\r\n    color?: string,\r\n    className?: string\r\n}"],
+  "mappings": ";;;;;;;;AAAA;AAAO,IAAM,QAAQ,CAAC,OAAkD;AAAlD,eAAC,SAAO,OAAO,UAArC,IAAsB,IAA4B,kBAA5B,IAA4B,CAA3B,SAAO,SAAO;AACjC,SACI,oBAAC;AAAA,IAAK,WAAW,YAAW;AAAA,KAA+D,QAA1F;AAAA,IAAiG,OAAO,EAAC,iBAAiB,MAAK;AAAA,IAAI;AAAA,IAAM;AAElJ;",
+  "names": []
+}

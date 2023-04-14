@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/views/details/views/test/containers/WizardNodeDetailsTesting.tsx"],
+  "sourcesContent": ["import { Box, ControlList } from \"@mzara/component\"\r\nimport { useParams } from \"react-router-dom\"\r\nimport { useWizardNodeDetailsQuery } from 'views/details/hooks/useWizardNodeDetailsQuery'\r\nimport _ from 'lodash'\r\nimport { useMemo } from \"react\"\r\n\r\nconst WizardNodeDetailsTesting = () => {\r\n\r\n    const { id } = useParams()\r\n    const { data } = useWizardNodeDetailsQuery(parseInt(id), true)\r\n\r\n    return (\r\n        <div className=\"flex flex-col gap-3\">\r\n            <Box className=\"max-w-xl w-full m-auto\">\r\n                <ControlList data={{ forms: [] }} nodeKey={data.nodeKey} />\r\n            </Box>\r\n        </div>\r\n    )\r\n}\r\n\r\nexport default WizardNodeDetailsTesting\r\n"],
+  "mappings": ";;;;;;;AAAA,SAAS,KAAK,mBAAmB;AACjC,SAAS,iBAAiB;AAD1B;AAMA,IAAM,2BAA2B,MAAM;AAEnC,QAAM,EAAE,GAAG,IAAI,UAAU;AACzB,QAAM,EAAE,KAAK,IAAI,0BAA0B,SAAS,EAAE,GAAG,IAAI;AAE7D,SACI,oBAAC;AAAA,IAAI,WAAU;AAAA,IACX,8BAAC;AAAA,MAAI,WAAU;AAAA,MACX,8BAAC;AAAA,QAAY,MAAM,EAAE,OAAO,CAAC,EAAE;AAAA,QAAG,SAAS,KAAK;AAAA,OAAS;AAAA,KAC7D;AAAA,GACJ;AAER;AAEA,IAAO,mCAAQ;",
+  "names": []
+}

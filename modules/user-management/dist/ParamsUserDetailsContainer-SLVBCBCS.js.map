@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/views/user-details/views/params/containers/ParamsUserDetailsContainer.tsx"],
+  "sourcesContent": ["const ParamsUserDetailsContainer = () => {\r\n    return <div>Params</div>\r\n}\r\n\r\nexport default ParamsUserDetailsContainer;"],
+  "mappings": ";;;;AAAA;AAAA,IAAM,6BAA6B,MAAM;AACrC,SAAO,oBAAC;AAAA,IAAI;AAAA,GAAM;AACtB;AAEA,IAAO,qCAAQ;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/view/params/containers/WizardDetailsParams.tsx"],
+  "sourcesContent": ["\r\nimport { Wizard } from \"components/Wizard\"\r\nimport { useParams } from \"react-router-dom\"\r\n\r\nconst WizardDetailsParams = () => {\r\n\r\n    const { id } = useParams()\r\n\r\n    return (\r\n        <Wizard\r\n            wizardKey=\"Generic.Wizard.Params.Wizard\"\r\n            id={parseInt(id)}\r\n            layout=\"PARAMS\"\r\n            />\r\n    )\r\n}\r\n\r\nexport default WizardDetailsParams\r\n"],
+  "mappings": ";;;;;;;;;AAEA,SAAS,iBAAiB;AAF1B;AAIA,IAAM,sBAAsB,MAAM;AAE9B,QAAM,EAAE,GAAG,IAAI,UAAU;AAEzB,SACI,oBAAC;AAAA,IACG,WAAU;AAAA,IACV,IAAI,SAAS,EAAE;AAAA,IACf,QAAO;AAAA,GACP;AAEZ;AAEA,IAAO,8BAAQ;",
+  "names": []
+}

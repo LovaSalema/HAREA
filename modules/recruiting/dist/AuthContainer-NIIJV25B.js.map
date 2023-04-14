@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/containers/AuthContainer.tsx"],
+  "sourcesContent": ["import { GenericSuspense } from \"@mzara/component\";\r\nimport { Outlet } from \"react-router-dom\";\r\n\r\nconst RecruitingContainer = () => {\r\n    return (\r\n        <>\r\n            <GenericSuspense>\r\n                <Outlet />\r\n            </GenericSuspense>\r\n        </>\r\n    );\r\n};\r\n\r\nexport default RecruitingContainer;\r\n"],
+  "mappings": ";;;;AAAA,SAAS,uBAAuB;AAChC,SAAS,cAAc;AADvB;AAGA,IAAM,sBAAsB,MAAM;AAC9B,SACI;AAAA,IACI,8BAAC;AAAA,MACG,8BAAC,UAAO;AAAA,KACZ;AAAA,GACJ;AAER;AAEA,IAAO,wBAAQ;",
+  "names": []
+}
